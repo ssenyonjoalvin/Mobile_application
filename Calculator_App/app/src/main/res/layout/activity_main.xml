@@ -15,7 +15,9 @@
         android:id="@+id/displayBlock1"
         android:layout_width="409dp"
         android:layout_height="181dp"
+        android:gravity="center"
         android:orientation="vertical"
+        android:paddingTop="20dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,16 +28,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="false"
-            android:focusable="false"
             android:ems="10"
+            android:focusable="false"
             android:gravity="end"
             android:inputType="textPersonName"
+            android:paddingRight="5dp"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:text="0"
+            android:text="6000/2+3227*2"
             android:textColor="@color/white"
-            android:textSize="40sp"
-            />
+            android:textSize="40sp" />
 
         <EditText
             android:id="@+id/result"
@@ -46,9 +48,10 @@
             android:focusable="false"
             android:gravity="end"
             android:inputType="textPersonName"
+            android:paddingRight="5dp"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:text="= 0"
+            android:text="=12,454"
             android:textColor="@color/white"
             android:textSize="60sp" />
 
@@ -236,20 +239,20 @@
             android:id="@+id/elsa2"
             android:layout_width="125dp"
             android:layout_height="337dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/material_dynamic_neutral50"
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@color/material_dynamic_neutral50"
             app:layout_constraintStart_toEndOf="@+id/alvin"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_neutral50"
                 android:gravity="center"
                 android:text="elsa'ss"
-                android:background="@color/material_dynamic_neutral50"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
