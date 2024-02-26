@@ -92,7 +92,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/material_dynamic_neutral50"
                 android:gravity="center"
-                android:text="Elsa"
+                android:text="Elsa's"
                 android:textColor="#3E2723"
                 android:textSize="20sp" />
         </LinearLayout>
@@ -228,14 +228,19 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="14dp"
+            android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/alvin"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="elsa"/>
+                android:gravity="center"
+                android:text="elsa'ss"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
         </LinearLayout>
 
