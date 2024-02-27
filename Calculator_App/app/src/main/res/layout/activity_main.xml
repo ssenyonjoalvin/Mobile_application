@@ -285,7 +285,7 @@
                     android:backgroundTint="#232525"
                     android:ems="10"
                     android:text="0"
-                    android:textColor="#58d9e8"
+                    android:textColor="#5864E8"
                     android:textSize="20dp" />
 
                 <Button
