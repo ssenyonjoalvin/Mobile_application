@@ -66,62 +66,86 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout11"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="1dp"
+            android:layout_width="389dp"
+            android:layout_height="41dp"
+            android:layout_marginBottom="108dp"
             android:gravity="right"
             android:orientation="horizontal"
             android:paddingRight="9dp"
             app:layout_constraintBottom_toTopOf="@+id/alvin"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
 
             <Button
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/design_default_color_error"
-                android:text="X" />
+                android:text="X"
+                tools:layout_editor_absoluteX="268dp"
+                tools:layout_editor_absoluteY="0dp" />
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:id="@+id/linearLayout14"
-            android:layout_width="412dp"
-            android:layout_height="67dp"
+            android:layout_width="362dp"
+            android:layout_height="94dp"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/alvin"
+            android:paddingTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout11"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/material_dynamic_neutral50"
-                android:gravity="center"
-                android:text="Elsa's"
-                android:textColor="#3E2723"
-                android:textSize="20sp" />
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="1dp"
+                android:text="C"
+                android:backgroundTint="#777772"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="1dp"
+                android:text="( )"
+                android:backgroundTint="#777772"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="1dp"
+                android:text="/"
+                android:backgroundTint="#2563ee"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="77dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="1dp"
+                android:text="*"
+                android:backgroundTint="#2563ee"
+                android:textSize="20dp" />
         </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/alvin"
             android:layout_width="265dp"
-            android:layout_height="349dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="329dp"
             android:orientation="vertical"
             android:paddingLeft="6dp"
             android:paddingRight="6dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/elsa2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="144dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -132,8 +156,12 @@
                     android:layout_width="74dp"
                     android:layout_height="77dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:text="7"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:layout_width="74dp"
@@ -141,6 +169,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="8"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -149,6 +180,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="9"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -162,6 +196,9 @@
                     android:layout_height="77dp"
                     android:layout_marginTop="1dp"
                     android:text="4"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -170,6 +207,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="5"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -178,6 +218,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="6"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -191,6 +234,9 @@
                     android:layout_height="77dp"
                     android:layout_marginTop="1dp"
                     android:text="1"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -199,6 +245,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="2"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -207,6 +256,9 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
                     android:text="3"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -221,6 +273,9 @@
                     android:layout_height="64dp"
                     android:layout_marginTop="0dp"
                     android:text="0"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
                 <Button
@@ -229,34 +284,53 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="0dp"
                     android:text="."
+                    android:backgroundTint="#232525"
+                    android:ems="10"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
 
         </LinearLayout>
 
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/elsa2"
-            android:layout_width="125dp"
-            android:layout_height="337dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
-            android:background="@color/material_dynamic_neutral50"
+            android:layout_width="84dp"
+            android:layout_height="344dp"
             android:gravity="center"
             android:orientation="vertical"
-            app:layout_constraintStart_toEndOf="@+id/alvin"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="130dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/material_dynamic_neutral50"
-                android:gravity="center"
-                android:text="elsa'ss"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
 
-        </LinearLayout>
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="77dp"
+                android:text="-"
+                android:textSize="20dp"
+                android:backgroundTint="#2563ee"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="118dp"
+                android:text="="
+                android:backgroundTint="#2563ee"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="96dp" />
+
+            <Button
+                android:layout_width="58dp"
+                android:layout_height="118dp"
+                android:text="="
+                android:textSize="20dp"
+                android:backgroundTint="#58d9e8"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="227dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
