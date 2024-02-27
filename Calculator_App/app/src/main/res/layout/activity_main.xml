@@ -42,7 +42,7 @@
         <EditText
             android:id="@+id/result"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="83dp"
             android:clickable="false"
             android:ems="10"
             android:focusable="false"
@@ -82,10 +82,15 @@
             <Button
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="259dp"
+                android:layout_marginEnd="41dp"
                 android:backgroundTint="@color/design_default_color_error"
                 android:text="X"
-                tools:layout_editor_absoluteX="268dp"
-                tools:layout_editor_absoluteY="0dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -113,7 +118,7 @@
                 android:layout_height="77dp"
                 android:layout_marginLeft="14dp"
                 android:layout_marginTop="1dp"
-                android:text="( )"
+                android:text="%"
                 android:backgroundTint="#777772"
                 android:textSize="20dp" />
 
@@ -141,11 +146,16 @@
             android:id="@+id/alvin"
             android:layout_width="265dp"
             android:layout_height="329dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="4dp"
             android:orientation="vertical"
             android:paddingLeft="6dp"
             android:paddingRight="6dp"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="144dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/elsa2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -158,8 +168,8 @@
                     android:layout_marginTop="1dp"
                     android:backgroundTint="#232525"
                     android:ems="10"
-                    android:textColor="#58d9e8"
                     android:text="7"
+                    android:textColor="#58d9e8"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -168,9 +178,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="8"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -179,9 +189,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="9"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -195,9 +205,9 @@
                     android:layout_width="74dp"
                     android:layout_height="77dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="4"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -206,9 +216,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="5"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -217,9 +227,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
-                    android:text="6"
                     android:backgroundTint="#232525"
                     android:ems="10"
+                    android:text="6"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -233,9 +243,9 @@
                     android:layout_width="74dp"
                     android:layout_height="77dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="1"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -244,9 +254,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
+                    android:backgroundTint="#232525"
+                    android:ems="10"
                     android:text="2"
-                    android:backgroundTint="#232525"
-                    android:ems="10"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -255,9 +265,9 @@
                     android:layout_height="77dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="1dp"
-                    android:text="3"
                     android:backgroundTint="#232525"
                     android:ems="10"
+                    android:text="3"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -272,9 +282,9 @@
                     android:layout_width="164dp"
                     android:layout_height="64dp"
                     android:layout_marginTop="0dp"
-                    android:text="0"
                     android:backgroundTint="#232525"
                     android:ems="10"
+                    android:text="0"
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
 
@@ -283,9 +293,9 @@
                     android:layout_height="69dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="0dp"
-                    android:text="."
                     android:backgroundTint="#232525"
                     android:ems="10"
+                    android:text="."
                     android:textColor="#58d9e8"
                     android:textSize="20dp" />
             </LinearLayout>
@@ -297,38 +307,62 @@
             android:id="@+id/elsa2"
             android:layout_width="84dp"
             android:layout_height="344dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="21dp"
             android:gravity="center"
             android:orientation="vertical"
-            tools:layout_editor_absoluteX="300dp"
-            tools:layout_editor_absoluteY="130dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/alvin"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
 
 
             <Button
+                android:id="@+id/button5"
                 android:layout_width="58dp"
-                android:layout_height="77dp"
+                android:layout_height="78dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="#2563ee"
                 android:text="-"
                 android:textSize="20dp"
-                android:backgroundTint="#2563ee"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="2dp" />
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <Button
+                android:id="@+id/button"
                 android:layout_width="58dp"
                 android:layout_height="118dp"
-                android:text="="
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="10dp"
                 android:backgroundTint="#2563ee"
+                android:text="+"
                 android:textSize="20dp"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="96dp" />
+                app:layout_constraintBottom_toTopOf="@+id/button7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
 
             <Button
+                android:id="@+id/button7"
                 android:layout_width="58dp"
                 android:layout_height="118dp"
-                android:text="="
-                android:textSize="20dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="9dp"
                 android:backgroundTint="#58d9e8"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="227dp" />
+                android:text="="
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
