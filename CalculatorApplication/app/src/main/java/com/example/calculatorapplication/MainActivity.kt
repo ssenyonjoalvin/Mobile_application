@@ -111,6 +111,7 @@ class MainActivity : AppCompatActivity() {
         }
         percentageSign.setOnClickListener {
             appendOnTheExpression("%", false)
+            calculatePercentage()
         }
         clearButton.setOnClickListener {
             result.text = ""
@@ -122,6 +123,16 @@ class MainActivity : AppCompatActivity() {
                 expression.text = currentExpression.substring(0,currentExpression.length-1)
             }
             result.text = ""
+        }
+    }
+    private fun calculatePercentage() {
+        try {
+            val inputExpression = expression.text.toString()
+            val percentageValue = inputExpression.toDouble() / 100
+            result.text = percentageValue.toString()
+            expression.text = "" // Clear the expression TextView after percentage calculation
+        } catch (e: Exception) {
+            Toast.makeText(this@MainActivity, "Invalid input", Toast.LENGTH_SHORT).show()
         }
     }
 
