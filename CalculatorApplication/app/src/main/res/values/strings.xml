@@ -16,7 +16,7 @@
     <string name="eight">8</string>
     <string name="nine">9</string>
     <string name="dot">.</string>
-    <string name="backSpace">X</string>
     <string name="clearButton">C</string>
     <string name="equalsSign">=</string>
+    <string name="backSpace">⌫</string>
 </resources>
