@@ -3,7 +3,6 @@ package com.example.calculatorapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import net.objecthunter.exp4j.ExpressionBuilder
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var multiplicationSign : Button
     private lateinit var percentageSign : Button
     private lateinit var clearButton : Button
-    private lateinit var backSpace : ImageButton
+    private lateinit var backSpace : Button
 
     private lateinit var  expression : TextView
     private lateinit var result : TextView
@@ -37,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Initialize the buttons correctly
-        one = findViewById(R.id.one)
+        one = findViewById(R.id.one )
         two = findViewById(R.id.two)
         three = findViewById(R.id.three)
         four = findViewById(R.id.four)
@@ -113,8 +112,7 @@ class MainActivity : AppCompatActivity() {
             appendOnTheExpression("%", false)
         }
         clearButton.setOnClickListener {
-            result.text = ""
-            expression.text = ""
+           clear()
         }
         backSpace.setOnClickListener {
             val currentExpression = expression.text.toString()
