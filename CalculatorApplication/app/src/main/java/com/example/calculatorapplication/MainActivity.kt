@@ -156,7 +156,6 @@ class MainActivity : AppCompatActivity() {
 
     // Append function
     private fun appendOnTheExpression(stringFromButton: String, clearStatus: Boolean) {
-
         // Clear the expression view and append the last result
         if (!clearStatus && lastResult.isNotEmpty()) {
             expression.text = lastResult
@@ -172,9 +171,14 @@ class MainActivity : AppCompatActivity() {
                 expression.append(stringFromButton)
             }
         } else {
-            expression.append(result.text)
+            // If the result is not empty, use it as the new expression
+            if (result.text.isNotEmpty()) {
+                expression.text = result.text
+                result.text = ""
+            }
+
+            // Append the new operator and operand to the expression
             expression.append(stringFromButton)
-            result.text = ""
         }
     }
 
