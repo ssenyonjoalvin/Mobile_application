@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         android:layout_marginTop="26dp">
 
-        <EditText
+        <TextView
             android:id="@+id/expression"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,6 @@
             android:ems="10"
             android:focusable="false"
             android:gravity="end"
-            android:inputType="textPersonName"
             android:labelFor="@+id/expression"
             android:paddingStart="0dp"
             android:paddingTop="10dp"
