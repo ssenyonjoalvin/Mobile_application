@@ -131,6 +131,10 @@ class MainActivity : AppCompatActivity() {
         try {
             // Extract the expression from the expression TextView
             val inputExpression = expression.text.toString()
+            if (inputExpression.contains("/0")){
+                result.text = "Error dividing by 0 !"
+                return
+            }
 
             // Remove the percentage sign from the expression
             val expressionWithoutPercentage = inputExpression.replace("%", "")
@@ -188,7 +192,10 @@ class MainActivity : AppCompatActivity() {
     private fun calculate() {
         try {
             val inputExpression = expression.text.toString()
-
+            if (inputExpression.contains("/0")) {
+                result.text = "Error"
+                return
+            }
             // Check if the expression contains a percentage sign
             if (inputExpression.contains("%")) {
                 calculatePercentage()
@@ -210,5 +217,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
         }
     }
-
 }
