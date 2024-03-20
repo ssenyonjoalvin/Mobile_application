@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Task_Management_app"
         tools:targetApi="31">
         <activity
+            android:name=".EnterNameFragement"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity

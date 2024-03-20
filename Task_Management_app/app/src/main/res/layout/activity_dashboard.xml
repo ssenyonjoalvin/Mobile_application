@@ -4,18 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".Dashboard">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="116dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
+
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="284dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginBottom="598dp"
-        android:text="myDashboard"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textView4"
+        android:layout_width="276dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:paddingStart="6dp"
+        android:text="Hello Username,"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:paddingStart="6dp"
+        android:paddingTop="5dp"
+        android:text="GOOD MORNING"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="408dp"
+        android:layout_height="102dp"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:clickable="true"
+            android:text="Ongoing" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:text="Complete" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:clickable="true"
+            android:text="Overdue" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="409dp"
+        android:layout_height="408dp"
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="576dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
