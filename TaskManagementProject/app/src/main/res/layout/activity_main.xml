@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,406 +8,392 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:padding="2dp"
->
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    >
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:background="@drawable/activity_heading_border_radius"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="10dp"
-            android:text="@string/add_new_task"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/activity_content_border_radius"
-        android:orientation="vertical"
-        android:paddingBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@string/details_section"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="3dp"
-            android:background="@color/black" />
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
             android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/label_task_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/task_name"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/task_name"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints=""
-                android:background="@drawable/activity_content_border_radius"
-                android:hint="@string/enter_task_name_here"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:paddingStart="10dp"
-                android:paddingEnd="0dp"
-                android:textColorHint="#EF6C00" />
+                android:layout_marginTop="2dp"
+                android:background="@drawable/activity_heading_border_radius"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UselessParent">
 
-            <!-- Start Date & End Date Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/add_new_task"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/activity_content_border_radius"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/details_section"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/black" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/label_task_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_name"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/task_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:background="@drawable/activity_content_border_radius"
+                        android:hint="@string/enter_task_name_here"
+                        android:inputType="text"
+                        android:minHeight="48dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:textColorHint="#EF6C00" />
+                    <!-- Start Date & End Date Section -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:baselineAligned="false">
+                        <!-- Start Date -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/label_start_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/start_date"
+                                android:textSize="18sp" />
+                            <EditText
+                                android:id="@+id/edit_box_start_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/activity_content_border_radius"
+                                android:hint="@string/starting_date"
+                                android:inputType="date"
+                                android:minHeight="48dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textColorHint="#827717"
+                                android:autofillHints="" />
+                        </LinearLayout>
+                        <!-- End Date -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/label_end_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/end_date"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/edit_box_end_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/activity_content_border_radius"
+                                android:hint="@string/ending_date"
+                                android:inputType="date"
+                                android:minHeight="48dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textColorHint="#827717"
+                                android:autofillHints="" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/priority"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/priority"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="17sp" />
+                                <EditText
+                                    android:id="@+id/edit_text_priority"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/activity_content_border_radius"
+                                    android:hint="@string/select_priority"
+                                    android:inputType="text"
+                                    android:minHeight="47dp"
+                                    android:paddingStart="9dp"
+                                    android:paddingEnd="-1dp"
+                                    android:textColorHint="#827716"
+                                    android:autofillHints="" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Description"
+                                    android:textSize="17sp"
+                                    android:paddingTop="5dp" />
+                                <EditText
+                                    android:id="@+id/task_description"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:background="@drawable/activity_content_border_radius"
+                                    android:hint="Enter description..."
+                                    android:inputType="text"
+                                    android:minHeight="47dp"
+                                    android:paddingStart="9dp"
+                                    android:paddingEnd="-1dp"
+                                    android:gravity="left"
+                                    android:textColorHint="#827716"
+                                    android:autofillHints="" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/activity_content_border_radius"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/sub_tasks"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/activity_content_border_radius"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/attachments_files"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="10dp"
-                android:baselineAligned="false">
-
-                <!-- Start Date -->
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/activity_content_border_radius"
+                    android:layout_margin="5dp"
+                    android:gravity="right|bottom">
 
-                    <TextView
-                        android:id="@+id/label_start_date"
+                    <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/start_date"
-                        android:textSize="18sp" />
+                        android:text="@string/add_file"
+                        android:textSize="24dp"
+                        android:backgroundTint="#EABE6E"
+                        android:layout_margin="5dp"/>
 
-                    <EditText
-                        android:id="@+id/edit_box_start_date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/activity_content_border_radius"
-                        android:hint="@string/starting_date"
-                        android:inputType="date"
-                        android:minHeight="48dp"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="0dp"
-                        android:textColorHint="#827717"
-                        android:autofillHints="" />
                 </LinearLayout>
 
-                <!-- End Date -->
-                <LinearLayout
-                    android:layout_width="0dp"
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/activity_content_border_radius"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_marginStart="10dp"
+                    android:text="@string/reminder_timelines"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/label_end_date"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/end_date"
-                        android:textSize="18sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/black" />
 
-                    <EditText
-                        android:id="@+id/edit_box_end_date"
+                    <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/activity_content_border_radius"
-                        android:hint="@string/ending_date"
-                        android:inputType="date"
-                        android:minHeight="48dp"
-                        android:paddingStart="10dp"
-                        android:paddingEnd="0dp"
-                        android:textColorHint="#827717"
-                        android:autofillHints="" />
-                </LinearLayout>
+                        android:columnCount="2"
+                        android:rowCount="2">
+                            <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:text="Hours"
+                                android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/timeline_in_hours"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:autofillHints=""
+                            android:background="@drawable/activity_content_border_radius"
+                            android:hint="set timeline in hours"
+                            android:inputType="date"
+                            android:minHeight="48dp"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="0dp"
+                            android:textColorHint="#827717" />
+
+                        <CheckBox
+                            android:id="@+id/daysCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Days"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/timeline_in_days"
+                            android:layout_width="260dp"
+                            android:layout_height="wrap_content"
+                            android:hint="set timeline in Days"
+                            android:inputType="date"
+                            android:background="@drawable/activity_content_border_radius"
+                            android:textColorHint="#827717"
+                            android:minHeight="48dp"
+                            android:paddingStart="10dp"/>
+                    </GridLayout>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/priority"
+        <LinearLayout
+            android:id="@+id/createButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+            android:gravity="right">
+
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/priority"
-                android:layout_marginTop="5dp"
-                android:textSize="17sp" />
-
-            <EditText
-                android:id="@+id/edit_text_priority"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/activity_content_border_radius"
-                android:hint="@string/select_priority"
-                android:inputType="text"
-                android:minHeight="47dp"
-                android:paddingStart="9dp"
-                android:paddingEnd="-1dp"
-                android:textColorHint="#827716"
-                android:autofillHints="" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Description"
-                android:textSize="17sp"
-                android:paddingTop="5dp"/>
-            <EditText
-                android:id="@+id/task_description"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/activity_content_border_radius"
-                android:hint="Enter description..."
-                android:inputType="text"
-                android:minHeight="47dp"
-                android:paddingStart="9dp"
-                android:paddingEnd="-1dp"
-                android:gravity="left"
-                android:textColorHint="#827716"
-                android:autofillHints="" />
-
-
+                android:text="Create"
+                android:backgroundTint="@color/orange"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
         </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/activity_content_border_radius"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@string/sub_tasks"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="4dp"
-            android:background="@color/black" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/activity_content_border_radius"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@string/attachments_files"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="4dp"
-            android:background="@color/black" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            >
-            <Button
-                android:id="@+id/angry_btn"
-                android:layout_width="300dp"
-                android:layout_height="100dp"
-                android:background="@drawable/buttonshape"
-                android:shadowColor="#A8A8A8"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="5"
-                android:text="Add file +"
-                android:textColor="#000000"
-                android:textSize="40sp" />
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        android:paddingBottom="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/activity_content_border_radius"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="@string/reminder_timelines"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="4dp"
-            android:background="@color/black" />
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:baselineAligned="false">
-
-            <!-- Start Date -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
-                <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Hours"
-                    android:textSize="25sp"/>
-            </LinearLayout>
-
-            <!-- End Date -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/reminder_date_in_hours"
-                    android:layout_width="596dp"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:background="@drawable/activity_content_border_radius"
-                    android:hint="@string/timeline_in_hours"
-                    android:inputType="date"
-                    android:minHeight="48dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="0dp"
-                    android:textColorHint="#827717" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:baselineAligned="false">
-
-            <!-- Start Date -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:layout_marginRight="10dp">
-                <CheckBox
-                    android:id="@+id/days"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:text="Days"
-                    android:textSize="25sp"/>
-            </LinearLayout>
-
-            <!-- End Date -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/timeline_in_days"
-                    android:layout_width="596dp"
-                    android:layout_height="wrap_content"
-                    android:autofillHints=""
-                    android:background="@drawable/activity_content_border_radius"
-                    android:hint="Timeline in days"
-                    android:inputType="date"
-                    android:minHeight="48dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="0dp"
-                    android:textColorHint="#827717" />
-            </LinearLayout>
-        </LinearLayout>
-
-
-
-
-    </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

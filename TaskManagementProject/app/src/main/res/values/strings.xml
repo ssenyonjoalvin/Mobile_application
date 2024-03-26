@@ -14,6 +14,12 @@
     <string name="timeline_in_hours">Timeline in hours</string>
     <string name="priority">Priority :</string>
     <string name="select_priority">Select Priority</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter description...</string>
+    <string name="add_file">+</string>
+    <string name="hours">Hours</string>
+    <string name="days">Days</string>
+    <string name="timeline_in_days">Timeline in days</string>
 
     <string-array name="sub_tasks">
         <item>Prepare documentation</item>
@@ -27,5 +33,6 @@
         <item>Discuss requirements</item>
         <item>Refactor code</item>
     </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
 
 </resources>
