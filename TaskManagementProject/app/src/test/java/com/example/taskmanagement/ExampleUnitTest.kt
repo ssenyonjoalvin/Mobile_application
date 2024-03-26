@@ -1,4 +1,4 @@
-package com.example.taskmanagementproject
+package com.example.taskmanagement
 
 import org.junit.Test
 
