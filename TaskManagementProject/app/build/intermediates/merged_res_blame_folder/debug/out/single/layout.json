@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-mergeDebugResources-3:/layout/activity_dashboard.xml",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.example.task_management_app-mergeDebugResources-3:/layout/activity_dashboard.xml",
+        "source": "com.example.task_management_app-main-6:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-mergeDebugResources-3:/layout/task_layout.xml",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/task_layout.xml"
+    }
+]

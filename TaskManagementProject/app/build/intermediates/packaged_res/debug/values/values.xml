@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="Completed">Complete</string>
+    <string name="Ongoing">Ongoing</string>
+    <string name="Overdue">Overdue</string>
+    <string name="Userid">Hello Username,</string>
+    <string name="app_name">Task_Management_app</string>
+    <string name="floating_action_button">Add task </string>
+    <string name="greeting">Good Morning</string>
+    <string name="image_des">profile picture</string>
+    <string name="image_description">Image illustrating  splash screen</string>
+    <string name="logo">Task Blaster</string>
+    <string name="slogan">Manage all your tasks in one go</string>
+    <style name="Base.Theme.Task_Management_app" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Task_Management_app" parent="Base.Theme.Task_Management_app"/>
+</resources>

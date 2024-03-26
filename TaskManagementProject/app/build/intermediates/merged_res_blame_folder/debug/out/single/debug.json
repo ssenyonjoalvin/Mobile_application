@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.task_management_app-merged_res-4:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.task_management_app-main-6:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_wave__1_.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/wave__1_.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_background.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/background.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_baseline_add_24.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/baseline_add_24.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/anim_topanimation.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/anim/topanimation.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/anim_bottomanimation.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/anim/bottomanimation.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_to.jpg.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/to.jpg"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_profilepic.jpg.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/profilepic.jpg"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/layout_task_layout.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/task_layout.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/xml_backup_rules.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/font_pacifico_regular.ttf.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/font/pacifico_regular.ttf"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_baseline_account_circle_24.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/baseline_account_circle_24.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/layout_activity_dashboard.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-merged_res-4:/drawable_butons_background.xml.flat",
+        "source": "/home/alvin-ssenyonjo/Downloads/Mobile_application-main/daemon/8.2/com.example.task_management_app-main-6:/drawable/butons_background.xml"
+    }
+]

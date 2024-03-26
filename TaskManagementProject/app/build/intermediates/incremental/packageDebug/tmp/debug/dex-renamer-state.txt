@@ -1,0 +1,13 @@
+#Mon Mar 25 16:12:04 EAT 2024
+base.0=/home/alvin-ssenyonjo/AndroidStudioProjects/Mobile_application/Task_Management_app/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/alvin-ssenyonjo/AndroidStudioProjects/Mobile_application/Task_Management_app/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/alvin-ssenyonjo/AndroidStudioProjects/Mobile_application/Task_Management_app/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
+base.3=/home/alvin-ssenyonjo/AndroidStudioProjects/Mobile_application/Task_Management_app/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=14/classes.dex
+path.3=5/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
