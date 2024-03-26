@@ -1,38 +1,3 @@
 <resources>
-    <string name="app_name">Task Management Project</string>
-    <string name="add_new_task">New Task</string>
-    <string name="details_section">Details</string>
-    <string name="start_date">Start Date :</string>
-    <string name="task_name">Task Name :</string>
-    <string name="enter_task_name_here">Enter task name here</string>
-    <string name="sub_tasks">Sub Tasks</string>
-    <string name="attachments_files">Attachments Files</string>
-    <string name="reminder_timelines">Reminder Timelines</string>
-    <string name="starting_date">Starting Date</string>
-    <string name="end_date">End Date :</string>
-    <string name="ending_date">Ending Date</string>
-    <string name="timeline_in_hours">Timeline in hours</string>
-    <string name="priority">Priority :</string>
-    <string name="select_priority">Select Priority</string>
-    <string name="description">Description</string>
-    <string name="enter_description">Enter description...</string>
-    <string name="add_file">+</string>
-    <string name="hours">Hours</string>
-    <string name="days">Days</string>
-    <string name="timeline_in_days">Timeline in days</string>
-
-    <string-array name="sub_tasks">
-        <item>Prepare documentation</item>
-        <item>Test functionality</item>
-        <item>Review code</item>
-        <item>Attend meeting</item>
-        <item>Submit report</item>
-        <item>Update UI</item>
-        <item>Fix bugs</item>
-        <item>Implement feature</item>
-        <item>Discuss requirements</item>
-        <item>Refactor code</item>
-    </string-array>
-    <string name="title_activity_main2">MainActivity2</string>
-
+    <string name="app_name">Task Management</string>
 </resources>
