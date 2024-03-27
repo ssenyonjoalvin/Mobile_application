@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task_Management_app</string>
+    <string name="slogan">Manage all your tasks in one go</string>
+    <string name="logo">Task Blaster</string>
+    <string name="image_description">Image illustrating  slapsh screen</string>
+    <string name="overdue">Overdue</string>
+
+</resources>
