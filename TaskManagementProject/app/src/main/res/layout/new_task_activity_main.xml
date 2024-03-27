@@ -6,8 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:padding="2dp"
+    tools:context=".NewTaskMainActivity"
+    android:padding="10dp"
     >
     <ScrollView
         android:layout_width="match_parent"
@@ -35,6 +35,7 @@
                     android:layout_marginStart="10dp"
                     android:text="@string/add_new_task"
                     android:textSize="40sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -57,6 +58,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:text="@string/details_section"
+                    android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -91,7 +93,7 @@
                         android:minHeight="48dp"
                         android:paddingStart="10dp"
                         android:paddingEnd="0dp"
-                        android:textColorHint="#EF6C00" />
+                        android:textColorHint="#827717"  />
                     <!-- Start Date & End Date Section -->
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -99,111 +101,147 @@
                         android:orientation="vertical"
                         android:layout_marginTop="10dp"
                         android:baselineAligned="false">
-                        <!-- Start Date -->
-                        <LinearLayout
+
+                        <GridLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:columnCount="2"
+                            android:columnOrderPreserved="true">
+
                             <TextView
                                 android:id="@+id/label_start_date"
-                                android:layout_width="wrap_content"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:layout_columnSpan="1"
                                 android:text="@string/start_date"
-                                android:textSize="18sp" />
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="5dp"/>
+
+                            <TextView
+                                android:id="@+id/label_end_date"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:layout_columnSpan="1"
+                                android:text="@string/end_date"
+                                android:textSize="18sp"
+                                android:paddingEnd="0dp"
+                                android:textColor="@color/black"
+                                android:paddingStart="5dp"/>
+
+                        </GridLayout>
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2"
+                            android:columnOrderPreserved="true">
+
                             <EditText
                                 android:id="@+id/edit_box_start_date"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:layout_columnSpan="1"
                                 android:background="@drawable/activity_content_border_radius"
                                 android:hint="@string/starting_date"
                                 android:inputType="date"
                                 android:minHeight="48dp"
                                 android:paddingStart="10dp"
-                                android:paddingEnd="0dp"
+                                android:layout_marginStart="2dp"
+                                android:paddingEnd="5dp"
                                 android:textColorHint="#827717"
                                 android:autofillHints="" />
-                        </LinearLayout>
-                        <!-- End Date -->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical">
-                            <TextView
-                                android:id="@+id/label_end_date"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/end_date"
-                                android:textSize="18sp" />
 
                             <EditText
                                 android:id="@+id/edit_box_end_date"
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:layout_columnSpan="1"
+                                android:autofillHints=""
                                 android:background="@drawable/activity_content_border_radius"
                                 android:hint="@string/ending_date"
                                 android:inputType="date"
                                 android:minHeight="48dp"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="0dp"
-                                android:textColorHint="#827717"
-                                android:autofillHints="" />
+                                android:paddingStart="5dp"
+                                android:paddingEnd="10dp"
+                                android:textColorHint="#827717" />
 
+                        </GridLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:orientation="vertical">
+                                android:orientation="vertical"
+                                tools:ignore="NestedWeights">
+
                                 <TextView
                                     android:id="@+id/priority"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/priority"
                                     android:layout_marginTop="5dp"
+                                    android:textColor="@color/black"
                                     android:textSize="17sp" />
-                                <EditText
-                                    android:id="@+id/edit_text_priority"
-                                    android:layout_width="match_parent"
+
+                                <Spinner
+                                    android:id="@+id/spinner_priority"
+                                    android:layout_width="200dp"
                                     android:layout_height="wrap_content"
+                                    android:spinnerMode="dropdown"
                                     android:background="@drawable/activity_content_border_radius"
-                                    android:hint="@string/select_priority"
-                                    android:inputType="text"
-                                    android:minHeight="47dp"
+                                    android:prompt="@string/select_priority"
+                                    android:minHeight="48dp"
                                     android:paddingStart="9dp"
                                     android:paddingEnd="-1dp"
-                                    android:textColorHint="#827716"
-                                    android:autofillHints="" />
+                                    android:textColorHint="#827717"
+                                    android:dropDownVerticalOffset="48dp"
+                                    android:theme="@style/SpinnerDropDownStyle" />
+
 
                             </LinearLayout>
 
-                            <LinearLayout
+
+                            <GridLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
 
                                 <TextView
+                                    android:textColor="@color/black"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="Description"
+                                    android:text="@string/description"
                                     android:textSize="17sp"
                                     android:paddingTop="5dp" />
+
                                 <EditText
                                     android:id="@+id/task_description"
-                                    android:layout_width="match_parent"
+                                    android:layout_width="320dp"
                                     android:layout_height="150dp"
+                                    android:autofillHints=""
                                     android:background="@drawable/activity_content_border_radius"
-                                    android:hint="Enter description..."
+                                    android:gravity="left"
+                                    android:hint="@string/enter_description"
                                     android:inputType="text"
                                     android:minHeight="47dp"
                                     android:paddingStart="9dp"
                                     android:paddingEnd="-1dp"
-                                    android:gravity="left"
-                                    android:textColorHint="#827716"
-                                    android:autofillHints="" />
-                            </LinearLayout>
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#827717"
+                                    tools:ignore="RtlHardcoded" />
+                            </GridLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -211,7 +249,7 @@
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:background="@drawable/activity_content_border_radius"
             android:orientation="vertical"
@@ -225,6 +263,7 @@
                 android:layout_marginStart="10dp"
                 android:text="@string/sub_tasks"
                 android:textSize="25sp"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <View
@@ -234,6 +273,32 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="4dp"
                 android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_subtasks_yet"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/add_file"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+            </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
@@ -255,6 +320,7 @@
                 android:layout_marginStart="10dp"
                 android:text="@string/attachments_files"
                 android:textSize="25sp"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <View
@@ -264,32 +330,32 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="4dp"
                 android:background="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_file_upload"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/activity_content_border_radius"
-                    android:layout_margin="5dp"
-                    android:gravity="right|bottom">
 
-                    <Button
+            >
+                <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/add_file"
-                        android:textSize="24dp"
-                        android:backgroundTint="#EABE6E"
-                        android:layout_margin="5dp"/>
-
-                </LinearLayout>
-
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/orange"
+                        android:text="@string/upload_file"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
             </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -310,6 +376,7 @@
                     android:layout_marginStart="10dp"
                     android:text="@string/reminder_timelines"
                     android:textSize="25sp"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <View
@@ -331,8 +398,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="15dp"
                                 android:layout_marginEnd="15dp"
-                                android:text="Hours"
-                                android:textSize="25sp" />
+                                android:text="@string/hours"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/timeline_in_hours"
@@ -341,8 +409,9 @@
                             android:layout_row="0"
                             android:layout_column="1"
                             android:autofillHints=""
+                            android:textColor="@color/black"
                             android:background="@drawable/activity_content_border_radius"
-                            android:hint="set timeline in hours"
+                            android:hint="@string/set_timeline_in_hours"
                             android:inputType="date"
                             android:minHeight="48dp"
                             android:paddingStart="10dp"
@@ -355,18 +424,22 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:text="Days"
-                            android:textSize="25sp" />
+                            android:text="@string/days"
+                            android:textSize="25sp"
+                            android:textColor="@color/black"/>
 
                         <EditText
                             android:id="@+id/timeline_in_days"
                             android:layout_width="260dp"
                             android:layout_height="wrap_content"
-                            android:hint="set timeline in Days"
+                            android:hint="@string/set_timeline_in_days"
                             android:inputType="date"
+                            android:textColor="@color/black"
                             android:background="@drawable/activity_content_border_radius"
                             android:textColorHint="#827717"
                             android:minHeight="48dp"
+                            android:paddingEnd="0dp"
+                            android:autofillHints=""
                             android:paddingStart="10dp"/>
                     </GridLayout>
             </LinearLayout>
@@ -381,16 +454,16 @@
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            android:gravity="right">
+            android:gravity="end">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create"
+                android:text="@string/create_button"
                 android:backgroundTint="@color/orange"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginEnd="10dp"/>
         </LinearLayout>
         </LinearLayout>
     </ScrollView>

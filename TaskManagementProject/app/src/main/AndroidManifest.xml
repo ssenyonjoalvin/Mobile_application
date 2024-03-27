@@ -12,13 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskManagementProject"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.TaskManagementProject" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".NewTaskMainActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
