@@ -3,31 +3,31 @@ package com.example.calculatorapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var one: Button
-    private lateinit var two: Button
-    private lateinit var three: Button
-    private lateinit var four: Button
-    private lateinit var five: Button
-    private lateinit var six: Button
-    private lateinit var seven: Button
-    private lateinit var eight: Button
-    private lateinit var nine: Button
-    private lateinit var zero: Button
-    private lateinit var dot: Button
-    private lateinit var equalsSign: Button
-    private lateinit var additionSign: Button
-    private lateinit var subtractionSign: Button
-    private lateinit var divisionSign: Button
-    private lateinit var multiplicationSign: Button
-    private lateinit var percentageSign: Button
-    private lateinit var clearButton: Button
-    private lateinit var backSpace: ImageButton
+    private lateinit var one : Button
+    private lateinit var two : Button
+    private lateinit var three : Button
+    private lateinit var four : Button
+    private lateinit var five : Button
+    private lateinit var six : Button
+    private lateinit var seven : Button
+    private lateinit var eight : Button
+    private lateinit var nine : Button
+    private lateinit var zero : Button
+    private lateinit var dot : Button
+    private lateinit var equalsSign : Button
+    private lateinit var additionSign : Button
+    private lateinit var subtractionSign : Button
+    private lateinit var divisionSign : Button
+    private lateinit var multiplicationSign : Button
+    private lateinit var percentageSign : Button
+    private lateinit var clearButton : Button
+    private lateinit var backSpace : Button
+
 
     private lateinit var expression: TextView
     private lateinit var result: TextView
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Initialize the buttons correctly
-        one = findViewById(R.id.one)
+        one = findViewById(R.id.one )
         two = findViewById(R.id.two)
         three = findViewById(R.id.three)
         four = findViewById(R.id.four)
@@ -115,8 +115,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         clearButton.setOnClickListener {
-            result.text = ""
-            expression.text = ""
+           clear()
         }
         backSpace.setOnClickListener {
             val currentExpression = expression.text.toString()
@@ -132,6 +131,10 @@ class MainActivity : AppCompatActivity() {
         try {
             // Extract the expression from the expression TextView
             val inputExpression = expression.text.toString()
+            if (inputExpression.contains("/0")){
+                result.text = "Error dividing by 0 !"
+                return
+            }
 
             // Remove the percentage sign from the expression
             val expressionWithoutPercentage = inputExpression.replace("%", "")
@@ -189,7 +192,10 @@ class MainActivity : AppCompatActivity() {
     private fun calculate() {
         try {
             val inputExpression = expression.text.toString()
-
+            if (inputExpression.contains("/0")) {
+                result.text = "Error"
+                return
+            }
             // Check if the expression contains a percentage sign
             if (inputExpression.contains("%")) {
                 calculatePercentage()
@@ -211,5 +217,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, e.message, Toast.LENGTH_LONG).show()
         }
     }
-
 }
