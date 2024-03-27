@@ -21,15 +21,18 @@ class SubtaskActivity : AppCompatActivity() {
         // Initialize RecyclerView
         recyclerView = findViewById(R.id.recyclerViewSubtasks)
 
-        // Find the "Add Subtask" button
-        val addButton: Button = findViewById(R.id.buttonAddSubtask)
-
-        //Set a click listener for the button
+        // Set click listener for the "Add Subtask" button
+        val addButton = findViewById<Button>(R.id.buttonAddSubtask)
         addButton.setOnClickListener {
-            // Launch the AddSubtaskActivity when the button is clicked
-            val intent = Intent(this, AddSubtaskActivity::class.java)
-            startActivity(intent)
-                }
+            // Show the dialog fragment
+            val dialogFragment = SubtaskDialogFragment()
+            dialogFragment.show(supportFragmentManager, "SubtaskDialogFragment")
+        }
+
+//        val dialogFragment = SubtaskDialogFragment()
+//        dialogFragment.subtaskListener = this
+//        dialogFragment.show(supportFragmentManager, "SubtaskDialogFragment")
+
 
         // Create Dummy Subtask Data
         val dummySubtasks = listOf(
@@ -47,5 +50,10 @@ class SubtaskActivity : AppCompatActivity() {
         // Set Adapter on RecyclerView
         recyclerView.adapter = adapter
     }
+
+//        override fun onSubtaskAdded(subtask: Subtask) {
+//            // Handle the newly added subtask here
+//            // Update your list of subtasks or perform any necessary actions
+//        }
 
     }

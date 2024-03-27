@@ -1,66 +1,38 @@
-<!-- activity_add_subtask.xml -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- subtask_dialog_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background = "@color/subtask_background">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- Title TextView -->
-    <TextView
-        android:id="@+id/textViewSubtasksTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Subtask"
-        android:textColor="@color/text_color"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
-
-    <!-- Subtask Name Label -->
-    <TextView
-        android:id="@+id/textViewSubtaskNameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:text="Subtask Name:"
-        android:textColor="@color/text_color"
-        app:layout_constraintBaseline_toBaselineOf="@id/editTextSubtaskName"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="80dp"
-        android:layout_marginStart="16dp"/>
-
-    <!-- Subtask Name EditText -->
     <EditText
         android:id="@+id/editTextSubtaskName"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:hint="Enter subtask name"
-        android:background="@drawable/input_field"
-        app:layout_constraintTop_toBottomOf="@id/textViewSubtasksTitle"
-        app:layout_constraintStart_toEndOf="@id/textViewSubtaskNameLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="64dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="16dp"/>
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Subtask Name"/>
 
-    <!-- Add Subtask Button -->
+    <EditText
+        android:id="@+id/editTextStartDate"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Start Date"/>
+
+    <EditText
+        android:id="@+id/editTextEndDate"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="End Date"/>
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Description"/>
 
     <Button
-        android:id="@+id/AddnewSubtask"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"/>
+        android:id="@+id/buttonAddSubtask"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Add Subtask"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
