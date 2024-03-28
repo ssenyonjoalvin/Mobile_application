@@ -1,4 +1,8 @@
 <resources>
+    <string name="slogan">Manage all your tasks in one go</string>
+    <string name="logo">Task Blaster</string>
+    <string name="image_description">Image illustrating  splash screen</string>
+    <string name="overdue">Overdue</string>
     <string name="app_name">Task Management Project</string>
     <string name="add_new_task">New Task</string>
     <string name="details_section">Details</string>
@@ -39,6 +43,7 @@
         <item>Intermediate</item>
     </string-array>
     <string name="title_activity_main2">MainActivity2</string>
+<<<<<<< HEAD
     <string name="set_timeline_in_days">set timeline in Days</string>
     <string name="no_subtasks_yet">No Subtasks Yet!</string>
     <string name="add_file_upload">Add file..</string>
@@ -46,4 +51,6 @@
     <string name="create_button">Create</string>
     <string name="upload_file">upload file</string>
 
+=======
+>>>>>>> main
 </resources>
