@@ -10,24 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-<<<<<<< HEAD
-        android:theme="@style/Theme.Task_Management_app"
-        tools:targetApi="31">
-        <activity
-            android:name=".EnterNameFragement"
-            android:exported="false" />
-        <activity
-            android:name=".Dashboard"
-            android:exported="false" />
-=======
         android:theme="@style/Theme.TaskManagementProject"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_main2"
             android:theme="@style/Theme.TaskManagementProject" />
->>>>>>> 7e5a44041814818f815730f5d185a6f676a2912b
         <activity
             android:name=".MainActivity"
             android:exported="true">
